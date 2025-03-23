@@ -1,0 +1,39 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminPropertyNetMasterPage.master.cs" Inherits="Administration_AdminPropertyNetMasterPage" %>
+<%@ Register Src="Controls/ucAdminHeader.ascx" TagName="ucAdminHeader"  TagPrefix="uc1" %>
+<%@ Register Src="Controls/ucAdminFooter.ascx" TagName="ucAdminFooter" TagPrefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Welcome Property Search Administration</title>
+    <link href="../Administration/CSS/AdminPropertyNet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table width="100%" topmargin="0" border="0">
+    <tr>
+    <td>
+        <uc1:ucAdminHeader ID="UcAdminHeader1" runat="server" />
+    
+    </td>
+    </tr>
+    <tr>
+    <td>
+     <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <uc2:ucAdminFooter ID="UcAdminFooter1" runat="server" />
+    
+    </td>
+    </tr>
+    </table>
+       
+    </div>
+    </form>
+</body>
+</html>
